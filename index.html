@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginForm@Maksim.Tsvetkov</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section aria-labelledby="login-header">
+            <h1 id="login-header">Log in</h1>
+            <form id="login-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" autocomplete="username" required aria-invalid="false" aria-errormessage="email-error" aria-describedby="email-desc">
+                    <span id="email-error" class="form-error">Email is invalid</span>
+                    <span id="email-desc" class="form-hint">Use your email to log in</span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" required aria-invalid="false" aria-errormessage="password-error" aria-describedby="password-desc">
+                    <span id="password-error" class="form-error">Password is invalid</span>
+                    <span id="password-desc" class="form-hint">Enter your password</span>
+                </div>
+                <button type="submit">Log in</button>
+            </form>
+            <div id="response" role="alert" aria-live="polite"></div>
+        </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

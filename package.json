@@ -1,0 +1,24 @@
+{
+  "name": "loginform",
+  "version": "1.0.0",
+  "description": "login form based on best practices",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "login",
+    "form"
+  ],
+  "author": "maskim.tsvetkov",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.3.5"
+  }
+}

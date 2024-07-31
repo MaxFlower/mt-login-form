@@ -1,0 +1,6 @@
+# internal
+.idea
+node_modules
+
+# exclude build
+dist
