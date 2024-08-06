@@ -2,10 +2,11 @@
     --step-px: 16px;
     --page-bg: #f4f4f4;
 
-    --primary-color: #007bff;
-    --primary-dark-color: #0056b3;
-    --secondary-color: #666;
-    --alarm-color: #ff4f22;
+    --primary-color: hsl(240, 100%, 50%);
+    --primary-dark-color: hsl(240, 100%, 35%);
+    --primary-light-color: hsl(240, 100%, 65%);
+    --secondary-color: hsl(0, 0%, 47%);
+    --alarm-color: hsla(9, 100%, 64%);
 }
 
 body {
@@ -66,12 +67,16 @@ input:focus-visible, button:focus-visible {
 button {
     width: 100%;
     padding: var(--step-px);
-    background-color: var(--primary-color);
+    background-color: var(--primary-light-color);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
+}
+
+button:active, button:focus {
+    background-color: var(--primary-color);
 }
 
 button:hover {
